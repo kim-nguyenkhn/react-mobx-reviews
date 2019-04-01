@@ -1,6 +1,6 @@
 # react-mobx-reviews
 
-![screenshot1.png](docs/screenshots/screenshot1.png)
+<kbd>![screenshot1.png](docs/screenshots/screenshot1.png)</kbd>
 
 Following the example provided by [Autho0's great React/MobX tutorial](https://auth0.com/blog/managing-the-state-of-react-apps-with-mobx/).
 
