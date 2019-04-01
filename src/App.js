@@ -1,25 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Form from "./components/Form";
+import Dashboard from "./components/Dashboard";
+import Reviews from "./components/Reviews";
+import Store from "./store";
+
+// Create single, global instance of store
+const reviewStore = new Store();
 
 class App extends Component {
   render() {
+    /* TODO: Perhaps rethink how we are passing the store down to components, so we don't have to define it as a prop each time */
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container">
+        <Form store={reviewStore} />
+        <Dashboard store={reviewStore} />
+        <Reviews store={reviewStore} />
       </div>
     );
   }
