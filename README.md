@@ -1,5 +1,7 @@
 # react-mobx-reviews
 
+![screenshot1.png](docs/screenshots/screenshot1.png)
+
 Following the example provided by [Autho0's great React/MobX tutorial](https://auth0.com/blog/managing-the-state-of-react-apps-with-mobx/).
 
 ## Files of interest
@@ -10,4 +12,11 @@ Following the example provided by [Autho0's great React/MobX tutorial](https://a
 - [src/components/Reviews.js](src/components/Reviews.js)
 - [src/components/Dashboard.js](src/components/Dashboard.js)
 
+## Running the app
 
+```
+git clone https://github.com/kim-nguyenkhn/react-mobx-reviews.git
+npm i
+npm start
+# `npm start` will open up the app on your default browser at `http://localhost:3000`
+```
